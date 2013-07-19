@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>AngularFlask</title>
+
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<link rel="stylesheet" href="/static/css/main.css">
+
+ 	<script src="/static/lib/jquery/jquery.min.js"></script>
+	<script src="/static/lib/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+	<div id="header" class="header navbar navbar-static-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				</button>
+				<a class="brand" href="/">AngularFlask</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav pull-right">
+						<li class="">
+							<a href="/">Home</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container page">
+		<div id="content" class="container main" ng-view>
+			<div>
+				<h3>404</h3>
+				<h4>Sorry, but the page you were trying to view does not exist.</h4>
+			</div>
+		</div>
+
+		<hr>
+		<footer id="footer" class="footer">
+			<div class="footer-left">
+				<a href="/about">About</a> |
+				<a href="/">Home</a>
+			</div>
+			<div class="footer-right">
+				<span>&copy; 2013 AngularFlask</span>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
