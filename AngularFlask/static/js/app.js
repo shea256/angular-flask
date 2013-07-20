@@ -1,7 +1,8 @@
 'use strict';
 
-angular.module('AngularFlask', [])
-	.config(['$routeProvider', function($routeProvider) {
+angular.module('AngularFlask', ['angularFlaskServices'])
+	.config(['$routeProvider', '$locationProvider',
+		function($routeProvider, $locationProvider) {
 		$routeProvider
 		.when('/', {
 			templateUrl: 'static/partials/landing.html',
@@ -11,12 +12,19 @@ angular.module('AngularFlask', [])
 			templateUrl: 'static/partials/about.html',
 			controller: AboutController
 		})
+		.when('/post', {
+			templateUrl: 'static/partials/post-list.html',
+			controller: PostListController
+		})
+		.when('/post/:postId', {
+			templateUrl: '/static/partials/post-detail.html',
+			controller: PostDetailController
+		})
 		.otherwise({
 			redirectTo: '/'
 		})
 		;
-	}])
-	.config(['$locationProvider', function($locationProvider) {
+
 		$locationProvider.html5Mode(true);
 	}])
 ;

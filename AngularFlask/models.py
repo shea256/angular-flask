@@ -1,4 +1,4 @@
-# Put models here
+from datetime import datetime
 
 from AngularFlask.core import db
 
