@@ -1,10 +1,20 @@
 # AngularFlask
 
-Before running the application, first create the database and seed it with a sample blog post:
+### How to Get Started
 
-> python manage.py create_db --seed_db
+1. fork this repo
 
-Then, go ahead and run the application:
+2. clone your own version
+> git clone git@github.com:YOUR_GITHUB_USERNAME/angular-flask.git && cd angular-flask
 
+3. install all the necessary packages (best done inside of a virtual environment)
+> pip install -r requirements.txt
+
+4. run the app
 > python runserver.py
 
+5. create and seed the db (the server must still be running, so open a new terminal window first)
+> python manage.py create_db; python manage.py seed_db --seedfile 'data/db_items.json'
+
+6. check out the page listing your blog posts
+> http://localhost:5000/post

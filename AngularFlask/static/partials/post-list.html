@@ -1,3 +1,5 @@
-<div>
-	<p>List of posts</p>
+
+<div ng-repeat="post in posts">
+	<h4><a href="/post/{{ post.id }}">{{ post.title }}</a></h4>
+	<p>{{ post.body }}<p>
 </div>

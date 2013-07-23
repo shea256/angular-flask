@@ -7,6 +7,8 @@ app = Flask(__name__)
 
 app.config.from_object('AngularFlask.settings')
 
+app.url_map.strict_slashes = False
+
 import AngularFlask.core
 import AngularFlask.models
 import AngularFlask.controllers

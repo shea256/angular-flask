@@ -11,7 +11,9 @@ function AboutController($scope) {
 }
 
 function PostListController($scope, Post) {
-	$scope.posts = Post.query();
+	$scope.postsQ = Post.get({}, function(posts) {
+		$scope.posts = posts.objects;
+	});
 }
 
 function PostDetailController($scope, $routeParams, Post) {

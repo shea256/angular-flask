@@ -1,6 +1,7 @@
 from datetime import datetime
 
 from AngularFlask.core import db
+from AngularFlask import app
 
 class Post(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
@@ -18,3 +19,9 @@ class Post(db.Model):
 	def __repr__(self):
 		return '<Post %r>' % self.title
 
+# models for which we want to create API endpoints
+app.config['API_MODELS'] = { 'post': Post }
+
+# models for which we want to create CRUD-style URL endpoints,
+# and pass the routing onto our AngularJS application
+app.config['CRUD_URL_MODELS'] = { 'post': Post }
