@@ -16,5 +16,5 @@
 5. create and seed the db (the server must still be running, so open a new terminal window first)
 > python manage.py create_db; python manage.py seed_db --seedfile 'data/db_items.json'
 
-6. check out the page listing your blog posts
-> http://localhost:5000/post
+6. check out your blog
+> http://localhost:5000/blog
