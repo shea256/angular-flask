@@ -1,6 +1,5 @@
-from AngularFlask import app
+from angular_flask import app
 
-# SQLAlchemy
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask.ext.restless import APIManager
 

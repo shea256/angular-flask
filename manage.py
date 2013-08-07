@@ -3,8 +3,8 @@ import json
 import argparse
 import requests
 
-from AngularFlask.core import db
-from AngularFlask.models import Post
+from angular_flask.core import db
+from angular_flask.models import Post
 
 def create_sample_db_entry(api_endpoint, payload):
 	url = 'http://localhost:5000/' + api_endpoint
