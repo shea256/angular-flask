@@ -2,7 +2,7 @@
 
 ### How to Get Started
 
-1. clone the repo
+1. clone this repo
 
 2. install all the necessary packages (best done inside of a virtual environment)
 > pip install -r requirements.txt
@@ -16,4 +16,4 @@
 5. check out your blog
 > http://localhost:5000/blog
 
-6. if you like it, give it a star :)
+6. if you like this project, give it a star :)
