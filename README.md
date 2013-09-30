@@ -1,4 +1,4 @@
-# AngularFlask
+# Angular + Flask Boilerplate App
 
 ### How to Get Started
 
