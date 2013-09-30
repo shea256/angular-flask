@@ -1,4 +1,6 @@
-# Angular + Flask Boilerplate App
+# AngularJS + Flask Boilerplate App
+
+A template for building apps with an Angular frontend and a Flask / python backend.
 
 ### How to Get Started
 
