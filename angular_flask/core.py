@@ -6,4 +6,3 @@ from flask.ext.restless import APIManager
 db = SQLAlchemy(app)
 
 api_manager = APIManager(app, flask_sqlalchemy_db=db)
-

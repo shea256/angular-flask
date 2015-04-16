@@ -12,4 +12,3 @@ app.url_map.strict_slashes = False
 import angular_flask.core
 import angular_flask.models
 import angular_flask.controllers
-
